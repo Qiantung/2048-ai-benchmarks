@@ -23,7 +23,7 @@ python dqn_trainer.py --episodes 50 --max-steps 300 --out-dir output_dqn
 python run_comparison.py
 ```
 
-`best_weights.json` 和既有模型已放在比较脚本预期位置。训练会写入输出目录，请先保留需要的检查点。遗传优化命令输出最优权重与历史，选择替换现有权重时应另存实验配置。
+`best_weights.json` 已放在比较脚本预期位置。历史 `.pt` 权重暂未公开，运行四策略比较前需要先训练对应模型。比较脚本默认读取 `output_dqn_4k/dqn_policy.pt`，DQN训练时请将 `--out-dir` 设为 `output_dqn_4k`；模型路径和训练预算应随实验记录。训练会写入输出目录，请先保留需要的检查点。遗传优化命令输出最优权重与历史，选择替换现有权重时应另存实验配置。
 
 ## 方法与文件
 
